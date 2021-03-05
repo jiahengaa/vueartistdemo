@@ -58,3 +58,7 @@
   place-self: end;
   justify-self: right;
 }
+
+.stretch {
+  place-self: stretch;
+}

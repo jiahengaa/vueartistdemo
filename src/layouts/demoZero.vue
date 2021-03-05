@@ -10,26 +10,26 @@
     "  class="grid cellGrid "     
     >
     <div class="gridCell partOne " >
-              <div   class="gridContent center-left "    >
+              <div   class="gridSlot stretch "     >
                     <slot name="partOne"> </slot>
                   </div>
                   </div>
                   
            <div class="gridCell partTwo " >
-              <div    class="gridContent center-center "     >partTwo</div>
+              <div    class="gridContent center-center "      >partTwo</div>
            </div>
            <div class="gridCell partThree " >
-              <div   class="gridContent center-left "    >
+              <div   class="gridSlot center-left "     >
                     <slot name="partThree"> </slot>
                   </div>
                   </div>
                   
            <div class="gridCell name4 " >
-              <div    class="gridContent center-center "     >学生</div>
+              <div    class="gridContent center-center "      >学生</div>
            </div>
            
            <div class="gridCell name6 " >
-              <div   class="gridContent "     ></div>
+              <div    class="gridContent "      ></div>
            </div>
            
     </section>
