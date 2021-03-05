@@ -1,0 +1,7 @@
+{
+    "workspacePath": "./",
+    "designerPath": "vueartist",
+    "layoutPath": "src/layouts",
+    "layoutCssPath": "src/layouts/css",
+    "layoutJsPath": "src/layouts/js"
+}
