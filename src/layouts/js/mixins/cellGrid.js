@@ -4,6 +4,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    showBorder: {
+      type: Boolean,
+      default: true,
+    },
     parentCell: {
       type: Array,
       default: () => [],
@@ -23,6 +27,7 @@ export default {
     isChildCell() {
       return {
         isCell: this.isCell,
+        noCellBorder: this.showBorder
       };
     },
   },

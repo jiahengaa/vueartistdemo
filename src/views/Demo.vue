@@ -1,18 +1,20 @@
 <template>
   <div class="root">
-    <demoZero class="demo" :parentCell="['partOne']">
+    <demoZero class="demo" :parentCell="['partOne']" :showBorder="false">
       <template v-slot:partOne>
-        <demoZero :isCell="true">
-          <template v-slot:partOne>
-            <div>I'm student one</div>
-          </template>
-          <template v-slot:partTwo>
-            <div>I'm student two</div>
-          </template>
-          <template v-slot:partThree>
-            <div>I'm student three</div>
-          </template>
-        </demoZero>
+        <div class="child">
+          <demoZero :isCell="true">
+            <template v-slot:partOne>
+              <div>I'm student one</div>
+            </template>
+            <template v-slot:partTwo>
+              <div>I'm student two</div>
+            </template>
+            <template v-slot:partThree>
+              <div>I'm student three</div>
+            </template>
+          </demoZero>
+        </div>
       </template>
       <template v-slot:partTwo>
         <div>I'm student two</div>
@@ -45,6 +47,10 @@ export default {
 
     ::v-deep .grid {
       min-height: 500px;
+    }
+
+    .child {
+      border: 0.5px solid rgb(63, 183, 238);
     }
   }
 }
