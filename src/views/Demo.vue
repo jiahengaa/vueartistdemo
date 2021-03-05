@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .root {
   width: 100%;
-  height: 600px;
+  height: 100%;
   .demo {
     width: 100%;
     height: 100%;
