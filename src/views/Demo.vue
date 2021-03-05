@@ -1,8 +1,18 @@
 <template>
   <div class="root">
-    <demoZero class="demo">
+    <demoZero class="demo" :parentCell="['partOne']">
       <template v-slot:partOne>
-        <div>I'm student one</div>
+        <demoZero :isCell="true">
+          <template v-slot:partOne>
+            <div>I'm student one</div>
+          </template>
+          <template v-slot:partTwo>
+            <div>I'm student two</div>
+          </template>
+          <template v-slot:partThree>
+            <div>I'm student three</div>
+          </template>
+        </demoZero>
       </template>
       <template v-slot:partTwo>
         <div>I'm student two</div>

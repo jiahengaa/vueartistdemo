@@ -7,21 +7,17 @@
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0 + 'px';
         grid-row-gap: 0 + 'px';
-    "  class="grid cellGrid "     
+    "  class="grid cellGrid "   :class="isChildCell"   @click="onBodyClick($event)" 
     >
-    <div class="gridCell partOne " >
-              <div   class="gridSlot stretch "     >
+    <div   class="gridSlot partOne stretch "    :class="isParentCell('partOne')"  >
                     <slot name="partOne"> </slot>
-                  </div>
                   </div>
                   
            <div class="gridCell partTwo " >
               <div    class="gridContent center-center "      >partTwo</div>
            </div>
-           <div class="gridCell partThree " >
-              <div   class="gridSlot center-left "     >
+           <div   class="gridSlot  partThree "    :class="isParentCell('partThree')"  >
                     <slot name="partThree"> </slot>
-                  </div>
                   </div>
                   
            <div class="gridCell name4 " >
@@ -37,7 +33,8 @@
 </template>
       
       <script>
-      export default {};
+      import index from "./js/demoZero.js";
+      export default index;
       </script>      
             
             
@@ -48,6 +45,10 @@
   .gridCell {
     border: 0.5px solid gray;
     display:grid;
+  }
+
+  .gridSlot {
+    border: 0.5px solid gray;
   }
 
   .grid {

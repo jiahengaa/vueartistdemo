@@ -6,12 +6,16 @@
   border-color: rgb(63, 183, 238) !important; /* 表格边线颜色复写 */
 }
 
+.cellGrid /deep/ .gridSlot {
+  border-color: rgb(63, 183, 238) !important; /* 表格边线颜色复写 */
+}
+
 .isParentCell {
-  border: 0px;
+  border: 0px !important;
 }
 
 .isCell {
-  border: 0px;
+  border: 0px !important;
 }
 
 .top-left {
