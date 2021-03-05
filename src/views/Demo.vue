@@ -28,9 +28,14 @@ export default {
 .root {
   width: 100%;
   height: 100%;
+
   .demo {
     width: 100%;
     height: 100%;
+
+    ::v-deep .grid {
+      min-height: 500px;
+    }
   }
 }
 </style>
