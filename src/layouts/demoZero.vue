@@ -2,7 +2,7 @@
   <div>
     <section
       style=" 
-    grid-template-columns: repeat(2, 1fr) repeat(2, auto) repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0 + 'px';
         grid-row-gap: 0 + 'px';
