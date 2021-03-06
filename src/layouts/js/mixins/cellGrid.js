@@ -27,7 +27,7 @@ export default {
     isChildCell() {
       return {
         isCell: this.isCell,
-        noCellBorder: this.showBorder
+        noCellBorder: !this.showBorder,
       };
     },
   },

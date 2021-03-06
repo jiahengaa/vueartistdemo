@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <demoZero class="demo" :parentCell="['partOne']" :showBorder="false">
+    <demoZero class="demo" :parentCell="['partOne']" :showBorder="true">
       <template v-slot:partOne>
         <div class="child">
           <demoZero :isCell="true">
@@ -50,7 +50,7 @@ export default {
     }
 
     .child {
-      border: 0.5px solid rgb(63, 183, 238);
+      // border: 0.5px solid rgb(63, 183, 238);
     }
   }
 }
