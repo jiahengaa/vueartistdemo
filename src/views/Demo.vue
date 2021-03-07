@@ -2,7 +2,7 @@
   <div class="root">
     <demoZero class="demo" :parentCell="['partOne']" :showBorder="true">
       <template v-slot:partOne>
-        <div class="child" v-resize:left>
+        <div class="child">
           <demoZero :isCell="true">
             <template v-slot:partOne>
               <div>I'm student one</div>
@@ -37,25 +37,6 @@ export default {
     return {
       myName: "ljh",
     };
-  },
-  directives: {
-    resize: {
-      inserted: (el, binding, vnode, oldVnode) => {
-        console.log("inserted", el, binding, vnode, oldVnode);
-      },
-      bind: (el, binding, vnode, oldVnode) => {
-        console.log("bind", el, binding, vnode, oldVnode);
-      },
-      update: (el, binding, vnode, oldVnode) => {
-        console.log("update", el, binding, vnode, oldVnode);
-      },
-      componentUpdated: (el, binding, vnode, oldVnode) => {
-        console.log("componentUpdated", el, binding, vnode, oldVnode);
-      },
-      unbind: (el, binding, vnode, oldVnode) => {
-        console.log("unbind", el, binding, vnode, oldVnode);
-      },
-    },
   },
 };
 </script>

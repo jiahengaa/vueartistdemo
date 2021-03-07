@@ -1,43 +1,50 @@
+
 <template>
-  <div>
-    <section
-      style=" 
-    grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 0 + 'px';
-        grid-row-gap: 0 + 'px';
+  <section
+    style="
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 0 + 'px';
+      grid-row-gap: 0 + 'px';
     "
-      class="grid cellGrid "
-      :class="isChildCell"
-      @click="onBodyClick($event)"
+    class="grid cellGrid"
+    :class="isChildCell"
+    @click="onBodyClick($event)"
+  >
+    <div gridArea="4 / 1 / 7 / 3" class="gridCell name7" v-resize>
+      <div class="gridContent center-center">学生</div>
+    </div>
+
+    <div gridArea="5 / 3 / 7 / 6" class="gridCell name8">
+      <div class="gridContent"></div>
+    </div>
+    <div
+      gridArea="1 / 6 / 7 / 7"
+      class="gridSlot partThree"
+      :class="isParentCell('partThree')"
     >
-      <div class="gridSlot partOne stretch " :class="isParentCell('partOne')">
-        <slot name="partOne"> </slot>
-      </div>
+      <slot name="partThree"> </slot>
+    </div>
 
-      <div class="gridCell partTwo ">
-        <div class="gridContent center-center ">partTwo</div>
-      </div>
-      <div class="gridSlot  partThree " :class="isParentCell('partThree')">
-        <slot name="partThree"> </slot>
-      </div>
-
-      <div class="gridCell name4 ">
-        <div class="gridContent center-center ">学生</div>
-      </div>
-
-      <div class="gridCell name6 ">
-        <div class="gridContent "></div>
-      </div>
-    </section>
-  </div>
+    <div gridArea="1 / 3 / 5 / 6" class="gridCell partTwo">
+      <div class="gridContent center-center">partTwo</div>
+    </div>
+    <div
+      gridArea="1 / 1 / 4 / 3"
+      class="gridSlot partOne stretch"
+      :class="isParentCell('partOne')"
+    >
+      <slot name="partOne"> </slot>
+    </div>
+  </section>
 </template>
-
-<script>
+      
+      <script>
 import index from "./js/demoZero.js";
 export default index;
-</script>
-
+</script>      
+            
+            
 <style lang="scss" scoped>
 @import "./css/cellGrid.css";
 
@@ -63,19 +70,21 @@ export default index;
   position: relative;
 }
 
-.partOne {
-  grid-area: 1 / 1 / 4 / 3;
+.name7 {
+  grid-area: 4 / 1 / 7 / 3;
 }
-.partTwo {
-  grid-area: 1 / 3 / 5 / 6;
+.name8 {
+  grid-area: 5 / 3 / 7 / 6;
 }
 .partThree {
   grid-area: 1 / 6 / 7 / 7;
 }
-.name4 {
-  grid-area: 4 / 1 / 7 / 3;
+.partTwo {
+  grid-area: 1 / 3 / 5 / 6;
 }
-.name6 {
-  grid-area: 5 / 3 / 7 / 6;
+.partOne {
+  grid-area: 1 / 1 / 4 / 3;
 }
 </style>
+
+      
