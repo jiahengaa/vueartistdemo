@@ -1,12 +1,13 @@
 import cellGrid from "./mixins/cellGrid";
-import resizeCell from "./mixins/resizeCell";
 
 export default {
-  mixins: [cellGrid, resizeCell],
+  mixins: [cellGrid],
   data() {
     return {};
   },
   methods: {
-    onBodyClick(e) {},
+    onClick(e) {
+      console.log(e);
+    },
   },
 };

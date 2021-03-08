@@ -1,37 +1,31 @@
 <template>
   <div class="root">
-    <demoZero class="demo" :parentCell="['partOne']" :showBorder="true">
+    <demoTwo class="demo" :parentCell="['partOne']" :showBorder="true">
       <template v-slot:partOne>
         <div class="child">
-          <demoZero :isCell="true" style="width:100%">
+          <demoTwo :isCell="true" :showBorder="false">
             <template v-slot:partOne>
               <div>I'm student one</div>
-            </template>
-            <template v-slot:partTwo>
-              <div>I'm student two</div>
             </template>
             <template v-slot:partThree>
               <div>I'm student three</div>
             </template>
-          </demoZero>
+          </demoTwo>
         </div>
-      </template>
-      <template v-slot:partTwo>
-        <div>I'm student two</div>
       </template>
       <template v-slot:partThree>
         <div>I'm student three</div>
       </template>
-    </demoZero>
+    </demoTwo>
   </div>
 </template>
 
 <script>
-import demoZero from "../layouts/demoZero";
+import demoTwo from "../layouts/demoTwo";
 
 export default {
   components: {
-    demoZero,
+    demoTwo,
   },
   data() {
     return {
@@ -55,7 +49,7 @@ export default {
     }
 
     .child {
-      // border: 0.5px solid rgb(63, 183, 238);
+      border: 0.5px solid rgb(63, 183, 238);
     }
   }
 }

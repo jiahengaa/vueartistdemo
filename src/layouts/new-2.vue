@@ -8,8 +8,7 @@
         grid-row-gap: 0 + 'px';
     "  class="grid"     
   >
-  <div class="VueArtistCell-1-1-2-2" ></div>
-              <div class="VueArtistCell-2-1-3-2" ></div>
+  <div class="VueArtistCell-2-1-3-2" ></div>
               <div class="VueArtistCell-3-1-4-2" ></div>
               <div class="VueArtistCell-4-1-5-2" ></div>
               <div class="VueArtistCell-5-1-6-2" ></div>
@@ -20,7 +19,6 @@
               <div class="VueArtistCell-10-1-11-2" ></div>
               <div class="VueArtistCell-11-1-12-2" ></div>
               <div class="VueArtistCell-12-1-13-2" ></div>
-              <div class="VueArtistCell-1-2-2-3" ></div>
               <div class="VueArtistCell-2-2-3-3" ></div>
               <div class="VueArtistCell-3-2-4-3" ></div>
               <div class="VueArtistCell-4-2-5-3" ></div>
@@ -32,7 +30,6 @@
               <div class="VueArtistCell-10-2-11-3" ></div>
               <div class="VueArtistCell-11-2-12-3" ></div>
               <div class="VueArtistCell-12-2-13-3" ></div>
-              <div class="VueArtistCell-1-3-2-4" ></div>
               <div class="VueArtistCell-2-3-3-4" ></div>
               <div class="VueArtistCell-3-3-4-4" ></div>
               <div class="VueArtistCell-4-3-5-4" ></div>
@@ -153,6 +150,18 @@
               <div class="VueArtistCell-11-12-12-13" ></div>
               <div class="VueArtistCell-12-12-13-13" ></div>
               
+           <div  gridArea='1 / 1 / 2 / 2' class="gridCell  name1 " >
+              <div    class="gridContent "      >姓名</div>
+           </div>
+           
+           <div  gridArea='1 / 2 / 2 / 3' class="gridCell  name2 " >
+              <div    class="gridContent "      >name2</div>
+           </div>
+           
+           <div  gridArea='1 / 3 / 2 / 4' class="gridCell  name3 " >
+              <div    class="gridContent "      >年龄</div>
+           </div>
+           
   </section>
 </template>
       
@@ -186,8 +195,7 @@
     position: relative;
   }
 
-  .VueArtistCell-1-1-2-2 { grid-area : 1/1/2/2;}
-          .VueArtistCell-2-1-3-2 { grid-area : 2/1/3/2;}
+  .VueArtistCell-2-1-3-2 { grid-area : 2/1/3/2;}
           .VueArtistCell-3-1-4-2 { grid-area : 3/1/4/2;}
           .VueArtistCell-4-1-5-2 { grid-area : 4/1/5/2;}
           .VueArtistCell-5-1-6-2 { grid-area : 5/1/6/2;}
@@ -198,7 +206,6 @@
           .VueArtistCell-10-1-11-2 { grid-area : 10/1/11/2;}
           .VueArtistCell-11-1-12-2 { grid-area : 11/1/12/2;}
           .VueArtistCell-12-1-13-2 { grid-area : 12/1/13/2;}
-          .VueArtistCell-1-2-2-3 { grid-area : 1/2/2/3;}
           .VueArtistCell-2-2-3-3 { grid-area : 2/2/3/3;}
           .VueArtistCell-3-2-4-3 { grid-area : 3/2/4/3;}
           .VueArtistCell-4-2-5-3 { grid-area : 4/2/5/3;}
@@ -210,7 +217,6 @@
           .VueArtistCell-10-2-11-3 { grid-area : 10/2/11/3;}
           .VueArtistCell-11-2-12-3 { grid-area : 11/2/12/3;}
           .VueArtistCell-12-2-13-3 { grid-area : 12/2/13/3;}
-          .VueArtistCell-1-3-2-4 { grid-area : 1/3/2/4;}
           .VueArtistCell-2-3-3-4 { grid-area : 2/3/3/4;}
           .VueArtistCell-3-3-4-4 { grid-area : 3/3/4/4;}
           .VueArtistCell-4-3-5-4 { grid-area : 4/3/5/4;}
@@ -330,6 +336,9 @@
           .VueArtistCell-10-12-11-13 { grid-area : 10/12/11/13;}
           .VueArtistCell-11-12-12-13 { grid-area : 11/12/12/13;}
           .VueArtistCell-12-12-13-13 { grid-area : 12/12/13/13;}
+          .name1 { grid-area : 1 / 1 / 2 / 2;}
+          .name2 { grid-area : 1 / 2 / 2 / 3;}
+          .name3 { grid-area : 1 / 3 / 2 / 4;}
           
 </style>
 

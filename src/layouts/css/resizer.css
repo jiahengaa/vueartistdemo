@@ -1,0 +1,8 @@
+.resizer {
+}
+
+.resizer .instance {
+  position: absolute;
+  visibility: hidden;
+  background-color: transparent;
+}
