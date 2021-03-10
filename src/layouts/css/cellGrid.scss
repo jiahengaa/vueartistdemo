@@ -1,33 +1,31 @@
 .cellGrid {
   border-color: rgb(63, 183, 238) !important; /* 表格边线颜色复写 */
-}
 
-.cellGrid /deep/ .gridCell {
-  border-color: rgb(63, 183, 238) !important; /* 表格边线颜色复写 */
-}
+  & > .gridCell {
+    border-color: rgb(63, 183, 238); /* 表格边线颜色复写 */
+  }
+  & > .gridSlot {
+    border-color: rgb(63, 183, 238); /* 表格边线颜色复写 */
 
-.cellGrid /deep/ .gridSlot {
-  border-color: rgb(63, 183, 238) !important; /* 表格边线颜色复写 */
+    &.isParentCell {
+      border: 0px;
+
+      & .isCell {
+        border: 0px;
+      }
+    }
+  }
 }
 
 .noCellBorder {
   border: 0px !important;
-}
 
-.noCellBorder /deep/ .gridCell {
-  border: 0px !important;
-}
-
-.noCellBorder /deep/ .gridSlot {
-  border: 0px !important;
-}
-
-.isParentCell {
-  border: 0px !important;
-}
-
-.isCell {
-  border: 0px !important;
+  & > .gridCell {
+    border: 0px;
+  }
+  & > .gridSlot {
+    border: 0px;
+  }
 }
 
 .top-left {

@@ -1,0 +1,14 @@
+.changeBorderStyle {
+  & > .gridCell {
+    min-height: 180px;
+    &:hover {
+      background-color: #d6eae0;
+    }
+  }
+  & > .gridSlot {
+    min-height: 100px;
+    &:hover {
+      background-color: #d6eae0;
+    }
+  }
+}

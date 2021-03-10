@@ -2,19 +2,17 @@
   <div class="root">
     <demoZero class="demo" :parentCell="['partOne']" :showBorder="true">
       <template v-slot:partOne>
-        <div class="child">
-          <demoZero :isCell="true" style="width:100%">
-            <template v-slot:partOne>
-              <div>I'm student one</div>
-            </template>
-            <template v-slot:partTwo>
-              <div>I'm student two</div>
-            </template>
-            <template v-slot:partThree>
-              <div>I'm student three</div>
-            </template>
-          </demoZero>
-        </div>
+        <demoZero :isCell="true" style="width:100%">
+          <template v-slot:partOne>
+            <div>I'm student one</div>
+          </template>
+          <template v-slot:partTwo>
+            <div>I'm student two</div>
+          </template>
+          <template v-slot:partThree>
+            <div>I'm student three</div>
+          </template>
+        </demoZero>
       </template>
       <template v-slot:partTwo>
         <div>I'm student two</div>

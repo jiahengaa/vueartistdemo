@@ -22,6 +22,21 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Demo2.vue"),
   },
+  {
+    path: "/basic",
+    name: "basic",
+    component: () => import("../views/basic.vue"),
+  },
+  {
+    path: "/changeStyle",
+    name: "changeBorderStyle",
+    component: () => import("../views/changeBorderStyle.vue"),
+  },
+  {
+    path: "/useCellGridPlugin",
+    name: "useCellGridPlugin",
+    component: () => import("../views/useCellGridPlugin.vue"),
+  },
 ];
 
 const router = new VueRouter({

@@ -6,7 +6,7 @@
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0 + 'px';
         grid-row-gap: 0 + 'px';
-    "  class="grid resizer cellGrid "   :class="isChildCell"   @click="onBodyClick($event)"    
+    "  class="grid cellGrid resizer "   :class="isChildCell"   @click="onBodyClick($event)"    
   >
   
            <div  gridArea='5 / 3 / 7 / 6' class="gridCell  name8 "   >
@@ -36,8 +36,8 @@
             
             
 <style lang="scss" scoped>
-@import "./css/resizer.css";
-                @import "./css/cellGrid.css";
+@import "./css/cellGrid.scss";
+                @import "./css/resizer.css";
                  
 
   .gridCell {
