@@ -24,6 +24,7 @@
 
 <script>
 import homeLayout from "./layouts/homeLayout";
+require("highlight.js/styles/tomorrow-night.css");
 
 export default {
   components: {
@@ -33,12 +34,14 @@ export default {
 </script>
 
 <style lang="scss">
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #858e96;
 
   ul {
     list-style: none;
@@ -47,9 +50,18 @@ export default {
     li {
       width: 100%;
       margin: 0px;
+background: #1f2223;
+
+      &:first-child{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      &:last-child{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
       a {
-        background: #30a6e6;
-        color: #ffffff;
+        color: #81a2be;
         display: block;
         font: bold 22px/20px sans-serif;
         padding-top: 20px;

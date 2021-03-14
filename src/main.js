@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import Highlight from "./utils/highlight";
+Vue.use(Highlight);
+
 Vue.config.productionTip = false;
 
 new Vue({
